@@ -5,11 +5,12 @@ public class Player
   public int RollDie()
   {
     Random random = new Random();
-    return random.Next(1, 18);
+    return random.Next(1, 19);
   }
 
   public double GenerateSpellStrength()
   {
-    throw new NotImplementedException("Please implement the Player.GenerateSpellStrength() method");
+    Random random = new Random();
+    return 100.0 * random.NextDouble();
   }
 }
